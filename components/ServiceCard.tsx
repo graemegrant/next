@@ -1,7 +1,7 @@
 /** @format */
 
 import { FunctionComponent } from 'react';
-import { IService } from '../type';
+import { IService } from '../types';
 
 const ServiceCard: FunctionComponent<{ service: IService }> = ({
   service: { Icon, about, title },
@@ -22,4 +22,4 @@ const ServiceCard: FunctionComponent<{ service: IService }> = ({
   );
 };
 
-export default ServiceCard;
+export default ServiceCard

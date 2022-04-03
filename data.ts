@@ -1,7 +1,7 @@
 /** @format */
 
-import { IProject, IService, } from './type';
-import { ISkill } from './type';
+import { IProject, IService, } from './types';
+import { ISkill } from './types';
 import { RiComputerLine } from 'react-icons/ri';
 import { FaServer } from 'react-icons/fa';
 import { AiOutlineAntDesign, AiOutlineApi } from 'react-icons/ai';

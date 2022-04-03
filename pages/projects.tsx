@@ -1,14 +1,17 @@
 import ProjectCard from "../components/ProjectCard";
+import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects } from "../data";
 
 const Projects = () => {
   return (
-    <div>
+    <div className="px-5 py-2 overflow-scroll" style={{ height: "65vh" }}>
+      <ProjectsNavbar/>
+      
       <nav>Navbar</nav>
-      <div className="grid grid-cols-12 gap-4 my-3">
-        {
-          projects.map(project => (
-            <div className="col-span-12 p-2 sm:col-span-6 lg:col-span-4">
+      <div className="relative grid grid-cols-12 gap-4 my-3">
+        
+        {projects.map((project) => (
+            <div className="col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-dark-200">
               <ProjectCard project={project} key={project.name} />
             </div>
           ))}
@@ -17,4 +20,4 @@ const Projects = () => {
   );
 };
 
-export default Projects
+export default Projects;
