@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import ProjectCard from "../components/ProjectCard";
 import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects } from "../data";
@@ -16,8 +17,18 @@ const Projects = () => {
             </div>
           ))}
       </div>
+=======
+const projects = () => {
+  return (
+    <div className="p-4">
+      projects page
+>>>>>>> parent of 8e70e18 (darkmode & Projects Navbar)
     </div>
-  );
-};
+  )
+}
 
+<<<<<<< HEAD
 export default Projects;
+=======
+export default projects
+>>>>>>> parent of 8e70e18 (darkmode & Projects Navbar)
