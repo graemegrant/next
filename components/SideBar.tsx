@@ -1,13 +1,15 @@
+/** @format */
 
 import {
+  AiFillFacebook,
   AiFillGithub,
   AiFillInstagram,
   AiFillLinkedin,
+  AiFillYoutube,
 } from 'react-icons/ai';
 import { GiTie } from 'react-icons/gi';
 import { GoLocation } from 'react-icons/go';
 import { useTheme } from 'next-themes';
-import Image from 'next/image';
 
 const Sidebar = () => {
 
@@ -20,14 +22,10 @@ const Sidebar = () => {
 
   return (
     <div>
-      <Image
+      <img
         src='https://picsum.photos/200/300'
         alt='avatar'
-        className='mx-auto border rounded-full'
-        width="128px"
-        height="128px"
-        layout="intrinsic"
-        quality="100"
+        className='w-32 h-32 mx-auto border rounded-full'
       />
       <h3 className='my-4 text-3xl font-medium tracking-wider font-kaushan'>
         <span className='text-green'>Graeme </span>
@@ -40,7 +38,7 @@ const Sidebar = () => {
       <a
         className='flex items-center justify-center px-2 py-1 my-2 bg-gray-200 rounded-full cursor-pointer dark:bg-dark-200'
         href=''
-        download='Graeme Grant'
+        download='name'
       >
         <GiTie className='w-6 h-6 rounded-full' />
         <span>Download Resume</span>
